@@ -290,6 +290,6 @@ HTML 태그의 id, name, value 속성을 자동으로 만들어준다.
 
 출처 : <a href="https://www.baeldung.com/thymeleaf-lists-utility">https://www.baeldung.com/thymeleaf-lists-utility [List 유틸리티]</a>
 
-출처: https://jddng.tistory.com/223 [IT 개발자들의 울타리:티스토리]
+       <a href="https://jddng.tistory.com/223">https://jddng.tistory.com/223 [IT 개발자들의 울타리:티스토리] </a>
 
-출처: <a href="https://memo-the-day.tistory.com/133"> https://memo-the-day.tistory.com/133 </a>[Thymeleaf 문법]
+       <a href="https://memo-the-day.tistory.com/133"> https://memo-the-day.tistory.com/133 [Thymeleaf 문법]</a>
