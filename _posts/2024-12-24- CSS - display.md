@@ -39,4 +39,7 @@ display의 속성이 inline인 경우 한줄에 다른 엘리먼트와 나란히
 이때, width와 height 속성은 무시되고 margin과 padding속성의 상하간격은 반영되지 않는다.
 
 # 4) display: inline-block
-display의 속성이 inline-block 경우 
+display의 속성이 inline-block 경우 inline 엘리먼트처럼 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 되지만
+block 엘리먼트처럼 width, height, margin, padding 속성이 모두 적용된다.
+
+# 5) display: inline-block
