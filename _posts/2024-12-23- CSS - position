@@ -1,0 +1,25 @@
+---
+layout: single
+title:  "CSS - position"
+categories: CSS
+tag: [CSS]
+author_profile: true
+toc: true
+toc_label: 목차
+toc_icon: "fas fa-list"
+---
+
+<br/>
+
+
+
+
+
+# ◆position 
+HTML 문서 상에서 요소가 배치되는 방식을 결정한다. 정확한 위치 지정을 위해 top, left, bottom, right 속성과 함께 사용된다.
+
+<br/>
+
+# 1)Position: static
+ position 속성이 static인 요소는 HTML 문서 상에서 원래 있어야하는 위치에 배치된다. 따라서 top, left, bottom, right 속성값은 position속성이 static일때 무시된다.
+ ```
