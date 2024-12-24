@@ -1,0 +1,169 @@
+---
+layout: single
+title:  "CSS - display : flex"
+categories: CSS
+tag: [CSS]
+author_profile: true
+toc: true
+toc_label: 목차
+toc_icon: "fas fa-list"
+---
+
+<br/>
+
+
+
+
+
+# ◆display : flex
+
+# 1) container flex
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="study.css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="item">helloflex</div>
+        <div class="item">abc</div>
+        <div class="item">helloflex</div>
+      </div>
+      </body>
+</html>
+```
+
+```
+.container {
+	display: flex;
+}
+
+.item{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+
+}
+```
+
+# 1) flex-direction
+요소를 수직, 수평, 역수직, 역수평으로 정렬
+```
+.container {
+	display: flex;
+  flex-direction: column-reverse;
+}
+```
+```
+  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+```
+
+# 2) flex-wrap
+nowrap : 줄바꿈하지 않고 아이템의 크기를 줄인다.(기본값)
+wrap : 크기를 줄이지 않고 한칸 내린다.
+wrap-reverse : 한칸 내리는데 거꾸로 위에서부터 채운다.
+
+# 3) justify-content
+justify-content: flex-end /*요소를 맨 오른쪽에 맞춘다.*/
+justify-content: center /*요소를 가운데에 맞춘다.*/
+justify-content: space-around /* 요소끼리의 일정한 테두리 만큼 간격을 벌린다.*/
+justify-content: space-evenly /* 요소끼리 일정한 간격만큼 벌린다 ( 처음, 끝에도 적용)*/
+justify-content: space-between /* 첫,끝 요소는 맨 끝에 붙힌 후에 남은요소끼리 일정한 간격만큼 벌린다.*/
+
+# 3) item
+# 3) flex-grow
+flex-grow를 주면 화면 전체를 채우려는 특성을 갖게 되고
+각 요소들끼리의 원하는 비율 만큼 부여할 수 있다.
+```
+.container {
+	display: flex;
+  
+}
+
+.item1{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+
+  flex-grow: 1;
+}
+
+.item2{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+
+  flex-grow: 2;
+
+}
+
+.item3{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+
+  flex-grow: 4;
+}
+```
+
+flex-shrink
+flex-shrink는 화면이 줄어들 때 아이템의 크기가 어느정도로 줄어들지 설정이 가능하다.
+
+```
+.container {
+	display: flex;
+  
+}
+
+.item1{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+
+  flex-grow: 1;
+  flex-basis: 1%
+}
+
+.item2{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+
+  flex-grow: 2;
+
+}
+
+.item3{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+
+  flex-grow: 4;
+}
+```
