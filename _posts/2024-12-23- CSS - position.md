@@ -74,7 +74,7 @@ HTML 문서 상에서 **요소가 배치되는 방식**을 결정한다. 정확�
   left : 200px;
 }
 ```
-![static]([https://github.com/pueser/pueser.github.io/assets/117990884/1b0ebff5-6818-4f1e-9b3e-c36d15df4a40](https://github.com/pueser/pueser.github.io/blob/master/images/2024-12-23-CSS%20-%20position/Position_static.png))
+![static]([https://github.com/pueser/pueser.github.io/assets/117990884/1b0ebff5-6818-4f1e-9b3e-c36d15df4a40])
 <br/>
 
 
