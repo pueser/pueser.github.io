@@ -84,6 +84,8 @@ HTML 문서 상에서 **요소가 배치되는 방식**을 결정한다. 정확�
 
 
 
+
+
 ## 2) Position: relative
 
  position 속성이 **realtive**인 경우 요소를 원래 위치에서 벗어나게 배치할 수 있게 된다. <br/> 원래위치를 기준으로 상대적으로 배치 해준다.<br/>요소의 ``위치지정은 top, botton, left, right 속성을 이용``해서 지정한다.
@@ -112,8 +114,10 @@ HTML 문서 상에서 **요소가 배치되는 방식**을 결정한다. 정확�
   bottom: 50px;
 }
 ```
-
+![Position_relative](https://github.com/user-attachments/assets/99868ce7-949d-4e6b-ba03-5edede05ecff)
 <br/>
+
+
 
 
 
@@ -188,12 +192,16 @@ main{
   left : 10px;
 }
 ```
+![Position_absolute](https://github.com/user-attachments/assets/574ed1aa-8a30-4c87-bf08-425f3b87ff92)
+<br/>
 
 box3의 사이즈는 body를 기준으로 배치되고 box2의 사이즈는 main을 기준으로 배치 되기 때문에<br/>box2는 body 기준으로 보면 ``25px(top) + 25px(main의 위치) = 50px`` 위치에 나타나게 된다.<br/>
-
 한편, box3는 body 기준으로 직접 `top: 50px;`로 지정되었기 때문에 두 요소가 같은 높이 위치에 겹쳐 보이게 된다.
 
 <br/>
+
+
+
 
 
 
@@ -249,8 +257,10 @@ main{
 }
 
 ```
-
+![Position_fixed](https://github.com/user-attachments/assets/3c54fdf3-94dd-4708-9654-b9428a62c9a8)
 <br>
+
+
 
 
 
@@ -299,9 +309,10 @@ main{
 }
 
 ```
+![Position_sticky](https://github.com/user-attachments/assets/9a36eabd-5a38-4853-ac10-1d1c1865fc4a)
 
 
 
 
 
-참고 : https://www.daleseo.com/css-position/
+참고 : <a href="https://www.daleseo.com/css-position/">www.daleseo.com</a>
