@@ -75,7 +75,7 @@ HTML 문서 상에서 **요소가 배치되는 방식**을 결정한다. 정확�
 }
 ```
 
-![static]([https://github.com/pueser/pueser.github.io/assets/117990884/1b0ebff5-6818-4f1e-9b3e-c36d15df4a40])
+![Position_static](https://github.com/user-attachments/assets/8216e9ec-25ff-4cd0-a035-28b1e8a820b2)
 <br/>
 
 
