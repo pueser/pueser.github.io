@@ -219,6 +219,7 @@ title의 글꼴 크기는 **0.5 * 16px = 8px**<br/>subtitle의 글꼴 크기는 
 
 
 
+
 ---
 
 # ◆ vh
@@ -271,7 +272,7 @@ body{
     height: 50vh;
 }
 ```
-![vh](https://github.com/user-attachments/assets/ccc95fa6-01e1-429e-9275-83940b69966b)
+<img width="158" height= 300 src="https://github.com/user-attachments/assets/ccc95fa6-01e1-429e-9275-83940b69966b" />
 
 container영역이 아닌 브라우저 화면 크기에 세로영역50%를 차지하게 된다.
 
