@@ -169,7 +169,7 @@ title의 글꼴 크기는 **0.5 * 16px = 8px**<br/>subtitle의 글꼴 크기는 
 
 # ◆ %
 
-**%**은 ``부모요소의 크기``를 기준으로 비례하여 크기가 조정 된다.
+**``%``**은 ``부모요소의 크기``를 기준으로 비례하여 크기가 조정 된다.
 
 <br/>
 
@@ -209,8 +209,7 @@ title의 글꼴 크기는 **0.5 * 16px = 8px**<br/>subtitle의 글꼴 크기는 
     height: 50%;
 }
 ```
-
-
+<img width="158" alt="%" src="https://github.com/user-attachments/assets/77ef2482-64e2-4f67-9eeb-c7d5e2605434" />
 
 <br/>
 
@@ -272,6 +271,7 @@ body{
     height: 50vh;
 }
 ```
+![vh](https://github.com/user-attachments/assets/ccc95fa6-01e1-429e-9275-83940b69966b)
 
 container영역이 아닌 브라우저 화면 크기에 세로영역50%를 차지하게 된다.
 
@@ -327,7 +327,13 @@ body{
     width: 50vw;
 }
 ```
+![vw](https://github.com/user-attachments/assets/8db405f6-d64a-47dc-afc2-428d705c04c6)
 
 container영역이 아닌 브라우저 화면 크기에 가로영역 50%를 차지하게 된다.
+<br/>
 
-https://brunch.co.kr/@bommade/25
+
+
+
+
+참고 : <a href="https://brunch.co.kr/@bommade/25">brunch.co.kr</a>
