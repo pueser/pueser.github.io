@@ -328,7 +328,7 @@ body{
     width: 50vw;
 }
 ```
-![vw](https://github.com/user-attachments/assets/8db405f6-d64a-47dc-afc2-428d705c04c6)
+<img width="200" height= 300 src="https://github.com/user-attachments/assets/8db405f6-d64a-47dc-afc2-428d705c04c6" />
 
 container영역이 아닌 브라우저 화면 크기에 가로영역 50%를 차지하게 된다.
 <br/>
