@@ -30,7 +30,7 @@ HTML 문서 상에서 **요소가 배치되는 방식**을 결정한다. 정확�
 
 
 
----
+
 ## 1) Position: static
 
  position 속성이 **static**인 요소는 HTML 문서 상에서 원래 있어야하는 위치에 배치된다.<br/> 따라서 ``top, left, bottom, right 속성값은 position속성이 static일때 무시``된다.
@@ -83,7 +83,7 @@ HTML 문서 상에서 **요소가 배치되는 방식**을 결정한다. 정확�
 
 
 
----
+
 ## 2) Position: relative
 
  position 속성이 **realtive**인 경우 요소를 원래 위치에서 벗어나게 배치할 수 있게 된다. <br/> 원래위치를 기준으로 상대적으로 배치 해준다.<br/>요소의 ``위치지정은 top, botton, left, right 속성을 이용``해서 지정한다.
@@ -121,7 +121,7 @@ HTML 문서 상에서 **요소가 배치되는 방식**을 결정한다. 정확�
 
 
 
----
+
 ## 3) Position: absolute
 
 position 속성이 **absolute**인 경우 요소는 배치기준을 자신이 아닌 **상위요소**에서 찾는다.<br/>DOM 트리를 따라 올라가서 position 속성이 static이 아닌 첫 번째 상위요소가 해당 요소의 배치 기준으로 설정된다. <br/>
@@ -203,7 +203,7 @@ box3의 사이즈는 body를 기준으로 배치되고 box2의 사이즈는 main
 
 
 
----
+
 ## 4) Position: fixed
 
 position 속성이 **fixed**인 경우 요소의 배치가 자신이나 부모 요소가 아닌 **브라우저 전체화면** 이어서 <br/>top, left, bottom, right 속성은 브라우저의 부터 요소가 얼마나 떨어져 있는지 결정한다.
@@ -261,7 +261,7 @@ main{
 
 
 
----
+
 ## 5)Position: sticky
 
 position 속성이 **fixed**인 경우 sticky인 요소가 스크롤바를 아래로 내리면 붙어서 움직이지 않는다.
