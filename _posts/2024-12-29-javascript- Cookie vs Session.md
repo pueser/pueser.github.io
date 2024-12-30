@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "javascript - Cookie vs Session"
-categories: javascript 
-tag: [javascript ]
+title:  "Javascript - Cookie vs Session"
+categories: Javascript 
+tag: [Javascript ]
 author_profile: true
 toc: true
 toc_label: 목차
