@@ -7,6 +7,7 @@ author_profile: true
 toc: true
 toc_label: 목차
 toc_icon: "fas fa-list"
+
 ---
 
 <br>
@@ -58,7 +59,7 @@ toc_icon: "fas fa-list"
 
 # ◆ HikariCP
 
-스프링 프로젝트를 진행하면서, 스프링부트 2.0부터 기본적으로 HikariCP를 사용하게 되었다.
+다른 DBCP 라이브러리보다 훨씬 가볍고 빠르며, 연결 지연이 적어 스프링 부트의 표준이 되었다.
 
 
 
@@ -75,24 +76,22 @@ toc_icon: "fas fa-list"
    </dependency>	
    ```
 
-2. root-context.xml에 DataSouce 설정 코드 추가
+2. root-context.xml에 DataSouce 설정 코드 추가<br>
 
-```java
-<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-    <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
-    <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/데이터베이스명?serverTimezone=Asia/Seoul"></property> 
-    <property name="username" value="사용자명"></property>
-    <property name="password" value="비밀번호"></property>
-</bean>	
-	
-<bean id="datasource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
-    <constructor-arg ref="hikariConfig"></constructor-arg>
-</bean>
-```
+   ```java
+   <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+       <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+       <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/데이터베이스명?serverTimezone=Asia/Seoul"></property> 
+       <property name="username" value="사용자명"></property>
+       <property name="password" value="비밀번호"></property>
+   </bean>	
+   	
+   <bean id="datasource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+       <constructor-arg ref="hikariConfig"></constructor-arg>
+   </bean>
+   ```
 
-<br>
-
-
+   
 
 
 
