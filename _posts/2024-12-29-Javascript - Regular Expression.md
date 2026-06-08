@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "javascript - Regular Expression"
-categories: javascript 
-tag: [javascript ]
+title:  "Javascript - Regular Expression"
+categories: Javascript 
+tag: [Javascript ]
 author_profile: true
 toc: true
 toc_label: 목차
