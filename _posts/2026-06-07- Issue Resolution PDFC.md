@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Issue Resolution PDFC"
-categories: Issue Resolution
+categories: Issue_Resolution
 tag: [Issue Resolution]
 author_profile: true
 toc: true
