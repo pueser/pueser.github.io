@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "Mybatis- CDATA"
-categories: Mybatis
-tag: [Mybatis, CDATA]
+title:  "MyBatis- CDATA"
+categories: MyBatis
+tag: [MyBatis, CDATA]
 author_profile: true
 toc: true
 toc_label: 목차
