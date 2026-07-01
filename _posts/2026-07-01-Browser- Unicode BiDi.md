@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "이벤트 버블링"
-categories: Javascript
+title:  "Unicode BiDi"
+categories: Browser
 tag: [BiDi, Unicode]
 author_profile: true
 toc: true
