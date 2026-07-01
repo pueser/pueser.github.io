@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Unicode BiDi"
+title:  "Browser - Unicode BiDi"
 categories: Browser
 tag: [BiDi, Unicode]
 author_profile: true
