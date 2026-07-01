@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "이벤트 버블링"
+title:  "Javascript - 이벤트 버블링"
 categories: Javascript
 tag: [Javascript]
 author_profile: true
