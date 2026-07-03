@@ -175,11 +175,11 @@ Glyph 확인
 
 [기존 페이지]
 
-<img alt="%" src="./images/2026-07-02- Browser - Font Fallback/fallback1.png" />
+<img alt="%" src="../images/2026-07-02-browser-font-fallback/fallback1.png" />
 
 [현재 페이지]
 
-<img alt="%" src="./images/2026-07-02- Browser - Font Fallback/fallback2.png" />
+<img alt="%" src="../images/2026-07-02-browser-font-fallback/fallback2.png" />
 
 같은 브라우저, 같은 PC였지만 서로 다른 폰트가 선택되었다.
 
