@@ -93,62 +93,62 @@ Glyph 확인
 <br/>
 <br/>
 
->## @font-face 주요 속성
->
->### 1. font-family
->
->CSS에서 사용할 폰트 이름이다.
->
->```css
->font-family: "Custom Font";
->```
->
->실제 폰트 내부 이름과 같을 필요는 없으며, 원하는 이름을 사용할 수 있다.
->
->### 2. src
->
+## @font-face 주요 속성
+
+### 1. font-family
+
+CSS에서 사용할 폰트 이름이다.
+
+```css
+font-family: "Custom Font";
+```
+
+실제 폰트 내부 이름과 같을 필요는 없으며, 원하는 이름을 사용할 수 있다.
+
+### 2. src
+
 >브라우저가 다운로드할 폰트 파일의 위치이다.
->
->```css
->src: url("CustomFont.woff2") format("woff2"),
->     url("CustomFont.ttf") format("truetype");
->```
->
->브라우저는 일반적으로 다음 순서로 지원 여부를 확인한다.
->
->```
->woff2
-> ↓
->woff
-> ↓
->ttf
->```
->
->### 3. font-weight
->
->해당 폰트가 담당하는 굵기를 의미한다.
->
->```css
->font-weight: 400;
->```
->
->### 4. font-style
->
->폰트의 스타일을 의미한다.
->
->- normal
->- italic
->- oblique
->
->### 5. font-display
->
->웹폰트가 다운로드되는 동안 텍스트를 어떻게 표시할지 결정한다.
->
->```css
->font-display: swap;
->```
->
->`swap`은 먼저 시스템 폰트로 표시한 뒤, 다운로드가 완료되면 웹폰트로 교체하는 방식이다.
+
+```css
+src: url("CustomFont.woff2") format("woff2"),
+     url("CustomFont.ttf") format("truetype");
+```
+
+브라우저는 일반적으로 다음 순서로 지원 여부를 확인한다.
+
+```
+woff2
+ ↓
+woff
+ ↓
+ttf
+```
+
+### 3. font-weight
+
+해당 폰트가 담당하는 굵기를 의미한다.
+
+```css
+font-weight: 400;
+```
+
+### 4. font-style
+
+폰트의 스타일을 의미한다.
+
+- normal
+- italic
+- oblique
+
+### 5. font-display
+
+웹폰트가 다운로드되는 동안 텍스트를 어떻게 표시할지 결정한다.
+
+```css
+font-display: swap;
+```
+
+`swap`은 먼저 시스템 폰트로 표시한 뒤, 다운로드가 완료되면 웹폰트로 교체하는 방식이다.
 
 ---
 <br/>
@@ -185,37 +185,37 @@ Glyph 확인
 
 <br/>
 
-> ## 글꼴 출처(Local file / Network resource)
->
-> Chrome DevTools의 **Rendered Fonts**에는 실제 렌더링에 사용된 폰트와 함께 **글꼴 출처(Font origin)** 가 표시된다.
->
-> ### Network resource
->
-> 웹페이지에서 `@font-face`를 통해 다운로드한 웹폰트가 실제 렌더링에 사용된 경우이다.
->
-> ```
-> Custom Font
-> 글꼴 출처: Network resource
-> ```
->
-> 즉, 브라우저가 네트워크에서 받은 웹폰트를 사용하고 있다는 의미이다.
->
-> ### Local file
->
-> 웹폰트가 아닌 운영체제의 폰트를 사용한 경우이다.
->
-> 예를 들어 Windows에서는 다음과 같은 시스템 폰트가 선택될 수 있다.
->
-> - Yu Gothic
-> - Malgun Gothic
-> - Meiryo
->
-> ```
-> Yu Gothic Medium
-> 글꼴 출처: Local file
-> ```
->
-> 이는 브라우저가 운영체제의 시스템 폰트를 사용하여 렌더링했다는 의미이다.
+ ## 글꼴 출처(Local file / Network resource)
+
+ Chrome DevTools의 **Rendered Fonts**에는 실제 렌더링에 사용된 폰트와 함께 **글꼴 출처(Font origin)** 가 표시된다.
+
+ ### Network resource
+
+ 웹페이지에서 `@font-face`를 통해 다운로드한 웹폰트가 실제 렌더링에 사용된 경우이다.
+
+ ```
+ Custom Font
+ 글꼴 출처: Network resource
+ ```
+
+ 즉, 브라우저가 네트워크에서 받은 웹폰트를 사용하고 있다는 의미이다.
+
+ ### Local file
+
+ 웹폰트가 아닌 운영체제의 폰트를 사용한 경우이다.
+
+ 예를 들어 Windows에서는 다음과 같은 시스템 폰트가 선택될 수 있다.
+
+ - Yu Gothic
+ - Malgun Gothic
+ - Meiryo
+
+ ```
+ Yu Gothic Medium
+ 글꼴 출처: Local file
+ ```
+
+ 이는 브라우저가 운영체제의 시스템 폰트를 사용하여 렌더링했다는 의미이다.
 
 ---
 <br/>
