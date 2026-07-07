@@ -165,11 +165,11 @@ font-display: swap;
 }
 
 .title {
-    font-family: "Custom Font", "Noto Sans", sans-serif;
+    font-family: "Custom Font", sans-serif;
 }
 ```
 
-처음에는 **`Custom Font`를 사용할 수 없으면 `Noto Sans`가 적용될 것**이라고 생각했다.
+처음에는 **`Custom Font`를 사용할 수 없으면 브라우저 폴백이 될 것**이라고 생각했다.
 
 하지만 실제로는 같은 환경에서도 서로 다른 폰트가 렌더링되었다.
 
@@ -212,7 +212,8 @@ Custom Font
 
 ```
 Yu Gothic Medium
-글꼴 출처: Local file ```
+글꼴 출처: Local file
+```
 
 이는 브라우저가 운영체제의 시스템 폰트를 사용하여 렌더링했다는 의미이다.
 
