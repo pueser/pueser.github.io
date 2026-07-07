@@ -107,7 +107,7 @@ font-family: "Custom Font";
 
 ### 2. src
 
->브라우저가 다운로드할 폰트 파일의 위치이다.
+브라우저가 다운로드할 폰트 파일의 위치이다.
 
 ```css
 src: url("CustomFont.woff2") format("woff2"),
@@ -175,47 +175,46 @@ font-display: swap;
 
 [기존 페이지]
 
-<img alt="%" src="../images/2026-07-02-browser-font-fallback/fallback1.png" />
+<img alt="%" src="https://pueser.github.io/images/2026-07-02-browser-font-fallback/fallback1.png" />
 
 [현재 페이지]
 
-<img alt="%" src="../images/2026-07-02-browser-font-fallback/fallback2.png" />
+<img alt="%" src="https://pueser.github.io/images/2026-07-02-browser-font-fallback/fallback2.png" />
 
 같은 브라우저, 같은 PC였지만 서로 다른 폰트가 선택되었다.
 
 <br/>
 
- ## 글꼴 출처(Local file / Network resource)
+## 글꼴 출처(Local file / Network resource)
 
- Chrome DevTools의 **Rendered Fonts**에는 실제 렌더링에 사용된 폰트와 함께 **글꼴 출처(Font origin)** 가 표시된다.
+Chrome DevTools의 **Rendered Fonts**에는 실제 렌더링에 사용된 폰트와 함께 **글꼴 출처(Font origin)** 가 표시된다.
 
- ### Network resource
+### Network resource
 
- 웹페이지에서 `@font-face`를 통해 다운로드한 웹폰트가 실제 렌더링에 사용된 경우이다.
+웹페이지에서 `@font-face`를 통해 다운로드한 웹폰트가 실제 렌더링에 사용된 경우이다.
 
- ```
- Custom Font
- 글꼴 출처: Network resource
- ```
+```
+Custom Font
+글꼴 출처: Network resource
+```
 
- 즉, 브라우저가 네트워크에서 받은 웹폰트를 사용하고 있다는 의미이다.
+즉, 브라우저가 네트워크에서 받은 웹폰트를 사용하고 있다는 의미이다.
 
- ### Local file
+### Local file
 
- 웹폰트가 아닌 운영체제의 폰트를 사용한 경우이다.
+웹폰트가 아닌 운영체제의 폰트를 사용한 경우이다.
 
- 예를 들어 Windows에서는 다음과 같은 시스템 폰트가 선택될 수 있다.
+예를 들어 Windows에서는 다음과 같은 시스템 폰트가 선택될 수 있다.
 
- - Yu Gothic
- - Malgun Gothic
- - Meiryo
+- Yu Gothic
+- Malgun Gothic
+- Meiryo
 
- ```
- Yu Gothic Medium
- 글꼴 출처: Local file
- ```
+```
+Yu Gothic Medium
+글꼴 출처: Local file ```
 
- 이는 브라우저가 운영체제의 시스템 폰트를 사용하여 렌더링했다는 의미이다.
+이는 브라우저가 운영체제의 시스템 폰트를 사용하여 렌더링했다는 의미이다.
 
 ---
 <br/>
