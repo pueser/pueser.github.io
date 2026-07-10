@@ -166,18 +166,10 @@ src: url("CustomFont.woff2") format("woff2"),
      url("CustomFont.ttf") format("truetype");
 ```
 
-브라우저는 일반적으로 다음 순서대로 지원 여부를 확인한다.
+브라우저는 일반적으로 src url 순서대로 지원 여부를 확인한다.
 
-```text
-WOFF2
-  │
-  ▼
-WOFF
-  │
-  ▼
-TTF
-```
-
+**참고**
+[웹폰트 파일형식](https://pueser.github.io/browser/Browser-%EC%9B%B9-%ED%8F%B0%ED%8A%B8-%ED%8C%8C%EC%9D%BC-%ED%98%95%EC%8B%9D/)
 <br/>
 
 ## font-weight
