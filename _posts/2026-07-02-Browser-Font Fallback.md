@@ -45,6 +45,7 @@ Noto Sans
 즉, **폰트 파일이 존재하더라도 필요한 Glyph가 없다면 다음 폰트를 탐색한다.**
 
 ---
+
 <br/>
 <br/>
 
@@ -88,6 +89,7 @@ Glyph 확인
 ```
 
 ---
+
 <br/>
 <br/>
 
@@ -140,6 +142,7 @@ HTML/CSS 파싱
 - **FOIT (Flash of Invisible Text)** : 웹폰트가 로드될 때까지 텍스트가 보이지 않는 현상
 
 ---
+
 <br/>
 <br/>
 
@@ -203,6 +206,7 @@ font-display: swap;
 `swap`은 시스템 폰트를 먼저 보여준 뒤, 웹폰트 다운로드가 완료되면 교체하는 방식이다.
 
 ---
+
 <br/>
 <br/>
 
@@ -234,6 +238,7 @@ font-display: swap;
 <img alt="" src="https://pueser.github.io/images/2026-07-02-browser-font-fallback/fallback2.png"/>
 
 ---
+
 <br/>
 <br/>
 
@@ -272,6 +277,7 @@ Font Origin : Local file
 즉, 브라우저가 시스템 폰트를 선택하여 렌더링했다는 의미이다.
 
 ---
+
 <br/>
 <br/>
 
@@ -313,6 +319,7 @@ Font Origin : Local file
 에 따라 서로 다른 폰트가 선택될 수 있다.
 
 ---
+
 <br/>
 <br/>
 
