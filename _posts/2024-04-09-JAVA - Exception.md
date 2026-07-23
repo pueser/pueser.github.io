@@ -19,7 +19,7 @@ toc_icon: "fas fa-list"
 
 
 
-# ◆예외처리
+# ◆ 예외처리
 
 -java는 에러 난 상황을 크게 오류(Error)와 예외(Exception)으로 구분한다. 예외(Exception)는 개발자가 처리 할 수 있는 에러이고 오류(Error)는 시스템에서 발생하여 개발자가 처리 할 수 없는 에러이다.
 
@@ -68,7 +68,7 @@ finally는 예외 발생 여부와 상관없이 무조건 수행되어야할 로
 <br/>
 <br/>
 
-## 2. .close()
+## 2. close()
 
 ### 2.1 의미
 
@@ -115,7 +115,7 @@ RuntimeException은 Java Virtual Machine의 정상적인 작동 중에 발생할
 
 RuntimeException 및 해당 서브 클래스는 메서드 또는 생성자의 실행에 의해 발생한다.
 
-![RuntimeException](https://github.com/pueser/pueser.github.io/blob/master/images/2023-07-24-JAVA%20-%20Exception/RuntimeException.png)
+<img alt="%" src="https://pueser.github.io/images/2023-07-24-JAVA - Exception/RuntimeException.png" />
 <br/>
 
 **checked exception**
