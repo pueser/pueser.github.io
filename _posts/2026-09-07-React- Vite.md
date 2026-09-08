@@ -10,6 +10,9 @@ toc_label: 목차
 toc_icon: "fas fa-list"
 ---
 
+<br>
+<br>
+
 # ◆ Vite란?
 
 Vite는 React와 같은 프론트엔드 프로젝트를 **개발하고 빌드하기 위한 도구(Build Tool)**이다.
@@ -57,6 +60,10 @@ Vite 개발 서버 실행
 과 같은 구조로 동작한다.
 
 ---
+
+<br>
+<br>
+
 
 # ◆ React와 Vite는 같은 것이 아니다
 
@@ -109,6 +116,10 @@ export default defineConfig({
 | Vite  | React 프로젝트를 개발하고 빌드하는 도구 |
 
 ---
+
+<br>
+<br>
+
 
 # ◆ Vite 프로젝트의 기본 구조
 
@@ -207,6 +218,9 @@ dist/
 > **vite.config.ts → Vite의 개발 및 빌드 설정**
 > **vercel.json → Vercel 배포 및 서비스 설정**
 
+---
+<br>
+<br>
 
 
 # ◆ vite.config.ts란?
@@ -419,6 +433,10 @@ server: {
 
 ---
 
+<br>
+<br>
+
+
 # ◆ 그렇다면 왜 Vite React 프로젝트에는 index.html이 있는가?
 
 현재 프로젝트에서는 Vite가 애플리케이션을 실행하기 위한 **HTML 엔트리 문서(HTML Entry Document)**로 `index.html`을 사용하기 때문이다.
@@ -447,6 +465,10 @@ React 컴포넌트
 
 ---
 
+<br>
+<br>
+
+
 # ◆ index.html과 main.tsx의 차이
 
 두 파일을 비교하면 다음과 같다.
@@ -471,6 +493,10 @@ App.tsx
 ```
 
 ---
+
+<br>
+<br>
+
 
 # ◆ React의 실제 시작점은 어디인가?
 
@@ -516,6 +542,10 @@ React 컴포넌트
 
 ---
 
+<br>
+<br>
+
+
 # ◆ 다른 React 프로젝트에서는 index.html이 안 보일 수도 있다
 
 React라고 해서 모든 프로젝트가 똑같은 구조를 사용하는 것은 아니다.
@@ -544,6 +574,10 @@ React 자체
 즉, `index.html`이 존재하는 이유는 **React 자체의 요구사항이라기보다는 Vite가 사용하는 애플리케이션 구조와 관련이 있다.**
 
 ---
+
+<br>
+<br>
+
 
 # ◆ 전체 구조 정리
 
