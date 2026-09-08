@@ -125,6 +125,7 @@ my-project/
 ├── index.html
 ├── package.json
 ├── tsconfig.json
+├── tsconfig.json
 └── vite.config.ts
 ```
 
@@ -141,6 +142,72 @@ my-project/
 이 중에서 특히 `vite.config.ts`, `index.html`, `main.tsx`의 관계를 이해하면 Vite + React 프로젝트의 전체적인 구조를 이해하기 쉬워진다.
 
 ---
+<br>
+<br>
+
+# ◆ vercel.json이란?
+
+`vercel.json`은 **Vercel에서 프로젝트를 배포할 때 사용할 설정을 정의하는 파일**이다.
+
+`vite.config.ts`가 **Vite의 개발 및 빌드 동작을 설정하는 파일**이라면,
+
+`vercel.json`은 **Vercel에서 배포된 애플리케이션을 어떻게 서비스할지 설정하는 파일**이라고 이해할 수 있다.
+
+예를 들어 Vite + React에서 React Router를 사용하는 SPA를 Vercel에 배포할 경우, 다음과 같이 `rewrite`를 설정할 수 있다.
+
+```json
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+```
+
+이 설정은 사용자가 다음과 같이 직접 URL에 접근했을 때,
+
+```text
+/portal/admin/posts
+```
+
+Vercel이 해당 경로의 실제 파일을 찾는 대신 `index.html`을 반환하도록 한다.
+
+```text
+/portal/admin/posts
+        ↓
+      Vercel
+        ↓
+    /index.html
+        ↓
+      React 실행
+        ↓
+  React Router가
+  /portal/admin/posts 처리
+```
+
+Vite로 빌드한 SPA에는 일반적으로 다음과 같이 `index.html`이 존재한다.
+
+```text
+dist/
+├── index.html
+└── assets/
+```
+
+하지만 `/portal/admin/posts`와 같은 React Router의 경로가 실제 파일로 존재하는 것은 아니다.
+
+따라서 서버에서 해당 경로를 `index.html`로 연결해주지 않으면, **페이지 내부에서 React Router를 사용하고 있더라도 직접 URL에 접근하거나 새로고침할 때 404가 발생할 수 있다.**
+
+반면 React 애플리케이션이 이미 실행된 상태에서 `NavLink`나 `navigate()`를 이용해 이동하는 경우에는 React Router가 클라이언트에서 라우팅을 처리하기 때문에 이러한 문제가 발생하지 않는다.
+
+즉, `vercel.json`의 `rewrite`는 **React Router 자체를 설정하는 것이 아니라, React Router가 실행되기 전에 서버에서 `index.html`을 전달해주는 역할**을 한다.
+
+> **vite.config.ts → Vite의 개발 및 빌드 설정**
+> **vercel.json → Vercel 배포 및 서비스 설정**
+
+
 
 # ◆ vite.config.ts란?
 
